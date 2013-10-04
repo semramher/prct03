@@ -171,65 +171,61 @@ x == ’sym’
 x == :sym
 	=> true
 z.class
-	=> Symbol
+	=> 
 x == ’sym’.to_sym
-	=> true
+	=> 
 x.to_s == ’sym’
-	=> true
+	=> 
 
 48. ¿Qué resultados se dan?
 print s
-	=> Rub
+	=> 
 print s, t
-	=> RubJava
+	=> 
 
 49. ¿Cuál es el resultado?
 "%d %s" % [3, "rubies"]
-	=> 3 rubies
+	=> 
 
 50. ¿Cuáles son los resultados?
 x, y = 4, 5
-	=> 4 5
+	=> 
 z = x > y ? x : y
-	=> 5
+	=> 
 x,y,z = [1,2,3]
-	=> 1 2 3
+	=> 
 
 51. ¿Qué resultados dan las siguientes operaciones?
 x.keys
-	=> a b
+	=> 
 x.values
-	=> 1 2
+	=> 
 x[:c] = 3
-	=> a b c
+x
+	=> 
 x.delete(’a’)
-	=> a b c
+x
+	=> 
 x.delete(:a)
-	=> b c
+x
+	=> 
 x.delete_if { |k,v| v % 2 == 0 }
-	=> {:a=>1}
-x	=> {:a=>1}
+	=> 
+x
+	=> 
 
 52. ¿Qué hace yield 4, 5?
-Llama a un bloque 4 y 5.
 
 53. ¿Qué hace la siguiente sentencia? counts = Hash.new(0) ¿Qué diferencia hay con la asignación counts = {}?
-=> {}
-En el primer caso se inicializan a 0 y el segundo a nil.
 
 54. ¿Qué retorna esta expresión? ’hello world, hello LPP’.scan /\w+/
-["hello", "world", "hello", "LPP"]
-hello
-world
-hello
-LPP
-Se le pasa una cadena de caracteres que se guarda como un array (omite los espacios.
-
 
 55. Explique que hacen estas sentencias:
 c = { :a => 3, :b => 2, :c => 1 }
-	=> a b c
+	=> 
 c.keys.sort.each { |k| puts c[k] }
-	=> 3 2 1
+	=> 
+
+
 
 
